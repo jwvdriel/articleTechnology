@@ -1,0 +1,75 @@
+:root {
+  --base-font: 'Poppins', serif;
+
+  /* font-weights */
+  --poppins-500-medium: 500;
+  --poppins-600-semibold: 600;
+
+  /* font-sizes */
+  --poppins-headings: 2.25rem; /* 36px */
+  --poppins-subheadings: 1.25ren; /* 20px */
+  --poppins-smallText: 0.875rem; /* 14px */
+
+  /* solors */
+  --all-heading-colors: #000000;
+  --all-date-colors: #4d5562;
+  --main-background-color: #f8fafc;
+  --unknonw-color: #d9d9d9;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 2rem;
+  font-family: var(--base-font);
+  background-color: var(--main-background-color);
+}
+
+header h1 {
+  font-size: var(--poppins-headings);
+  font-weight: var(--poppins-600-semibold);
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+header img {
+  display: block;
+  margin: 0 auto 3rem;
+}
+
+.image-article-section img {
+  border-radius: 1rem;
+}
+
+.image-article-section {
+  display: flex;
+  margin-bottom: 3rem;
+}
+
+.article-textcontent {
+  margin-left: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-right: 4rem;
+}
+
+.article-textcontent h2 {
+  font-size: var(--poppins-subheadings);
+  font-weight: var(--poppins-600-semibold);
+  color: var(--all-heading-colors);
+}
+
+.date-text {
+  color: var(--all-date-colors);
+  font-weight: var(--poppins-500-medium);
+}
+
+.author-info {
+  text-align: center;
+  margin-top: 2rem;
+}
