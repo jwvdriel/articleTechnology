@@ -24,7 +24,7 @@
 }
 
 body {
-  margin: 2rem;
+  margin: 2rem 2rem;
   font-family: var(--base-font);
   background-color: var(--main-background-color);
 }
@@ -39,10 +39,6 @@ header h1 {
 header img {
   display: block;
   margin: 0 auto 3rem;
-}
-
-.image-article-section img {
-  border-radius: 1rem;
 }
 
 .image-article-section {
@@ -72,4 +68,19 @@ header img {
 .author-info {
   text-align: center;
   margin-top: 2rem;
+}
+
+/* tablets (portrait) */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  body {
+    margin: 2rem 9rem;
+  }
+}
+
+/* Desktops */
+@media only screen and (min-width: 1201px) {
+  body {
+    margin: 2rem 16.875rem;
+  }
 }
